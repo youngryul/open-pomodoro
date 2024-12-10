@@ -3,6 +3,7 @@ import styled, {createGlobalStyle} from "styled-components";
 import {AnimatePresence, motion} from "framer-motion";
 import {useRecoilState} from "recoil";
 import {clickAtom, timerAtom} from "./Atom";
+import {getWeater} from "./services/api.ts";
 
 const GlobalStyle = createGlobalStyle`
     body {
@@ -126,6 +127,8 @@ function App() {
     const onClick = () => setClick((prev) => !prev);
 
     useEffect(() => {
+        getWeater();
+
         if(clicked) {
             const id = setInterval(() => {
                 setTimer((prev) => prev - 1);
