@@ -25,7 +25,7 @@ const BoxVar = {
 
 interface PomodoroProps {
     weather: number;
-    weatherId: number;
+    weatherId?: number;
 }
 
 
@@ -63,11 +63,11 @@ function Pomodoro({ weather }: PomodoroProps) {
 
 
     return (
-        <div className={`${bgColor}`}>
-            <div className="flex flex-col items-center justify-center  w-[480px] h-screen mx-auto">
+        <div className={`${bgColor} overflow-hidden`}>
+            <div className="flex flex-col items-center justify-center  w-[480px] h-full mx-auto">
                 <h1 className="text-white text-4xl font-bold">{icon}Pomodoro</h1>
                 <AnimatePresence>
-                    <div className="flex flex-row mt-24">
+                    <div className="flex flex-row mt-12">
                         <motion.div
                             className="w-[120px] h-[200px] bg-white shadow-lg rounded-lg text-black flex items-center justify-center text-5xl font-bold"
                             variants={BoxVar}
@@ -93,7 +93,7 @@ function Pomodoro({ weather }: PomodoroProps) {
                     </div>
                     <motion.button
                         onClick={onClick}
-                        className="mt-24 w-[80px] h-[80px] bg-black opacity-30 rounded-full text-white text-5xl font-bold"
+                        className="mt-12 w-[80px] h-[80px] bg-black opacity-30 rounded-full text-white text-5xl font-bold"
                         variants={BtnVar}
                         whileHover="hover"
                         key={clicked.toString()}
@@ -101,7 +101,7 @@ function Pomodoro({ weather }: PomodoroProps) {
                         {clicked ? <PauseBtn /> : <PlayBtn />}
                     </motion.button>
                 </AnimatePresence>
-                <div className="flex flex-row mt-20">
+                <div className="flex flex-row mt-12">
                     <div className="flex flex-col items-center mx-12">
                         <div className="text-white font-bold text-lg opacity-70">{round}/4</div>
                         <div className="text-white font-bold text-lg">ROUND</div>
