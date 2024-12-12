@@ -18,7 +18,6 @@ openWeather API를 사용하여 날씨에 따라 배경화면, 아이콘이 변�
 ## 시작 가이드
 
 
----
 
 ## Stacks 🐈
 
@@ -36,4 +35,8 @@ openWeather API를 사용하여 날씨에 따라 배경화면, 아이콘이 변�
   <img src="https://img.shields.io/badge/Tailwind CSS-06B6D4?style=flat-square&logo=Tailwind CSS&logoColor=white"/>
 </div>
 
+
+## 라이선스
+
+이 프로젝트는 [MIT 라이선스](LICENSE)에 따라 라이센스가 부여됩니다. `LICENSE` 파일을 참고해 주세요.
 
