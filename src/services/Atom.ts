@@ -1,11 +1,11 @@
-import { atom } from "recoil"
+import { atom } from "recoil";
 
 export const clickAtom = atom({
-    key: "clicked",
-    default : false
+  key: "clicked",
+  default: false,
 });
 
 export const timerAtom = atom({
-    key: "timer",
-    default : 1500
-})
+  key: "timer",
+  default: 1500,
+});
