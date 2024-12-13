@@ -16,16 +16,10 @@ export function getLoactionWeather(): Promise<any> {
   });
 }
 
-function getWeather(lat: number, lon: number): Promise<any> {
+async function getWeather(lat: number, lon: number) {
   const WEATHER_API = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${import.meta.env.VITE_API_KEY}`;
 
-  return axios
-    .get(WEATHER_API)
-    .then((result) => {
-      return result.data.weather[0].id;
-    })
-    .catch((error) => {
-      console.log("error", error);
-      throw error;
-    });
+  return await axios.get(WEATHER_API).then((result) => {
+    return result.data.weather[0].id;
+  });
 }

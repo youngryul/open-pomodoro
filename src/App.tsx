@@ -4,7 +4,6 @@ import Pomodoro from "./components/Pomodoro.tsx";
 
 function App() {
   const [weather, setWeather] = useState<any>(null);
-  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     getLoactionWeather()
@@ -12,7 +11,6 @@ function App() {
         setWeather(data);
       })
       .catch((err) => {
-        setError("Failed to fetch weather data");
         console.error(err);
       });
   }, []);
