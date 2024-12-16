@@ -2,4 +2,4 @@ import { atom } from "jotai";
 
 export const clickAtom = atom(false);
 
-export const timerAtom = atom(15);
+export const timerAtom = atom(1500);

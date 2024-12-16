@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export function getLoactionWeather(): Promise<any> {
+export function getLoactionWeather(): Promise<PomodoroProps> {
   return new Promise((resolve, reject) => {
     navigator.geolocation.getCurrentPosition(
       (position) => {
@@ -19,7 +19,7 @@ export function getLoactionWeather(): Promise<any> {
 async function getWeather(lat: number, lon: number) {
   const WEATHER_API = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${import.meta.env.VITE_API_KEY}`;
 
-  return await axios.get(WEATHER_API).then((result) => {
-    return result.data.weather[0].id;
-  });
+  const result =  await axios.get(WEATHER_API);
+  return result.data.weather[0].id;
+
 }

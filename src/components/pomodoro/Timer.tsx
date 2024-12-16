@@ -37,7 +37,7 @@ export default function Timer() {
 
       if (timer === 0) {
         clearInterval(id);
-        setTimer(15);
+        setTimer(1500);
         setClick(false);
       }
 

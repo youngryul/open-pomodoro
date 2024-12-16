@@ -2,17 +2,12 @@ import changeBackground from "../../utils/changeBackground.tsx";
 import Timer from "./Timer.tsx";
 import Counter from "./Counter.tsx";
 
-
-
-
-interface PomodoroProps {
-  weather: number;
-  weatherId?: number;
-}
+type PomodoroProps = {
+  weather: number | undefined;
+};
 
 function Pomodoro({ weather }: PomodoroProps) {
-
-  const { bgColor, icon } = changeBackground(weather);
+  const { bgColor, icon } = changeBackground(weather ?? 0);
 
   return (
     <div className={`${bgColor} overflow-hidden`}>

@@ -4,7 +4,7 @@ import useWeather from "./hooks/useWeather.tsx";
 function App() {
   const weather = useWeather();
 
-  return (
+    return (
     <>
       <Pomodoro weather={weather} />
     </>
