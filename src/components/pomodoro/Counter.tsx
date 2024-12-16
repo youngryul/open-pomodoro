@@ -1,22 +1,23 @@
 import { useEffect, useState } from "react";
-import { useRecoilState } from "recoil";
-import { clickAtom } from "../../services/Atom.ts";
+import { useAtom } from "jotai";
+import {clickAtom, timerAtom} from "../../services/Atom.ts";
 
 export default function Counter() {
-  const [clicked] = useRecoilState(clickAtom);
+  const [clicked] = useAtom(clickAtom);
   const [round, setRound] = useState(0);
   const [goal, setGoal] = useState(0);
+  const [timer] = useAtom(timerAtom);
 
   useEffect(() => {
     if (clicked) {
       if (round === 4) {
         setGoal((prev) => prev + 1);
         setRound(0);
-      } else {
+      } else if (timer === 0) {
         setRound((prev) => prev + 1);
       }
     }
-  }, [clicked]);
+  }, [timer, clicked]);
 
   return (
     <>

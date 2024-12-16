@@ -1,9 +1,10 @@
-import { useRecoilState } from "recoil";
+import { useAtom } from "jotai";
 import { clickAtom, timerAtom } from "../../services/Atom.ts";
-import { useEffect } from "react";
+import {useEffect} from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { PauseBtn } from "../button/PauseBtn.tsx";
 import { PlayBtn } from "../button/PlayBtn.tsx";
+
 
 const BtnVar = {
   hover: { scale: 1.3 },
@@ -23,8 +24,8 @@ const BoxVar = {
 };
 
 export default function Timer() {
-  const [clicked, setClick] = useRecoilState(clickAtom);
-  const [timer, setTimer] = useRecoilState(timerAtom);
+  const [clicked, setClick] = useAtom(clickAtom);
+  const [timer, setTimer] = useAtom(timerAtom);
 
   const onClick = () => setClick((prev) => !prev);
 
@@ -36,7 +37,7 @@ export default function Timer() {
 
       if (timer === 0) {
         clearInterval(id);
-        setTimer(1500);
+        setTimer(15);
         setClick(false);
       }
 

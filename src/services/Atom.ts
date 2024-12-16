@@ -1,11 +1,5 @@
-import { atom } from "recoil";
+import { atom } from "jotai";
 
-export const clickAtom = atom({
-  key: "clicked",
-  default: false,
-});
+export const clickAtom = atom(false);
 
-export const timerAtom = atom({
-  key: "timer",
-  default: 1500,
-});
+export const timerAtom = atom(15);
