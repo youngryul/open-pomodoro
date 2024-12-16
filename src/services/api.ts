@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export function getLoactionWeather(): Promise<PomodoroProps> {
+export function getLoactionWeather(): Promise<number> {
   return new Promise((resolve, reject) => {
     navigator.geolocation.getCurrentPosition(
       (position) => {
