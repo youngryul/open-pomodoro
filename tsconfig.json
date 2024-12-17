@@ -1,11 +1,14 @@
 {
-  "files": [],
+  "files": [
+    "/src/env.d.ts"
+  ],
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
   ],
   "compilerOptions": {
     "types": ["vitest/globals"]
-  }
+  },
+
 }
 
