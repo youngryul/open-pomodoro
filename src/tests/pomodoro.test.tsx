@@ -27,7 +27,7 @@ describe("pomodoro", () => {
             </RecoilRoot>
         );
 
-        const container = screen.getByText(/Pomodoro/i).closest('div').parentElement;
+        const container = screen.getByText(/Pomodoro/i).closest('div')!.parentElement;
         expect(container).toHaveClass(bgColor);
 
         const heading = screen.getByText(/Pomodoro/i);
@@ -44,7 +44,7 @@ describe("pomodoro", () => {
             </RecoilRoot>
         );
 
-        const container = screen.getByText(/Pomodoro/i).closest('div').parentElement;
+        const container = screen.getByText(/Pomodoro/i).closest('div')!.parentElement;
         expect(container).toHaveClass(bgColor);
 
         const heading = screen.getByText(/Pomodoro/i);
@@ -61,7 +61,7 @@ describe("pomodoro", () => {
             </RecoilRoot>
         );
 
-        const container = screen.getByText(/Pomodoro/i).closest('div').parentElement;
+        const container = screen.getByText(/Pomodoro/i).closest('div')!.parentElement;
         expect(container).toHaveClass(bgColor);
 
         const heading = screen.getByText(/Pomodoro/i);
@@ -79,7 +79,7 @@ describe("pomodoro", () => {
             </RecoilRoot>
         );
 
-        const container = screen.getByText(/Pomodoro/i).closest('div').parentElement;
+        const container = screen.getByText(/Pomodoro/i).closest('div')!.parentElement;
         expect(container).toHaveClass(bgColor);
 
         const heading = screen.getByText(/Pomodoro/i);
@@ -96,7 +96,7 @@ describe("pomodoro", () => {
             </RecoilRoot>
         );
 
-        const container = screen.getByText(/Pomodoro/i).closest('div').parentElement;
+        const container = screen.getByText(/Pomodoro/i).closest('div')!.parentElement;
         expect(container).toHaveClass(bgColor);
 
         const heading = screen.getByText(/Pomodoro/i);
@@ -113,7 +113,7 @@ describe("pomodoro", () => {
             </RecoilRoot>
         );
 
-        const container = screen.getByText(/Pomodoro/i).closest('div').parentElement;
+        const container = screen.getByText(/Pomodoro/i).closest('div')!.parentElement;
         expect(container).toHaveClass(bgColor);
 
         const heading = screen.getByText(/Pomodoro/i);
@@ -130,7 +130,7 @@ describe("pomodoro", () => {
             </RecoilRoot>
         );
 
-        const container = screen.getByText(/Pomodoro/i).closest('div').parentElement;
+        const container = screen.getByText(/Pomodoro/i).closest('div')!.parentElement;
         expect(container).toHaveClass(bgColor);
 
         const heading = screen.getByText(/Pomodoro/i);
