@@ -1,7 +1,17 @@
 {
   "manifest_version": 3,
-  "name": "CRXJS React Vite Example",
+  "name": "Weather Pomodoro",
+  "description" : "Pomodoro that changes according to the weather",
   "version": "1.0.0",
-  "action": { "default_popup": "index.html" },
+  "action": {
+    "default_popup": "index.html",
+    "default_icon" : "assets/pomodoro_img.jpg",
+    "icons": {
+      "16" : "assets/pomodoro_img.jpg",
+      "24" : "assets/pomodoro_img.jpg",
+      "32" : "assets/pomodoro_img.jpg"
+    }
+
+  },
   "permissions": ["offscreen", "geolocation"]
 }
