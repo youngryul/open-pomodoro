@@ -1,4 +1,4 @@
-name: pmomodoro CI/CD
+name: pomodoro CI/CD
 
 on:
   pull_request:
