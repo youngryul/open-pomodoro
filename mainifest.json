@@ -2,16 +2,17 @@
   "manifest_version": 3,
   "name": "Weather Pomodoro",
   "description" : "Pomodoro that changes according to the weather",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "action": {
     "default_popup": "index.html",
-    "default_icon" : "assets/pomodoro_img.jpg",
-    "icons": {
-      "16" : "assets/pomodoro_img.jpg",
-      "24" : "assets/pomodoro_img.jpg",
-      "32" : "assets/pomodoro_img.jpg"
-    }
-
+    "default_icon": "assets/pomodoro_img.png"
   },
-  "permissions": ["offscreen", "geolocation"]
+  "icons": {
+    "16" : "assets/pomodoro_img.png",
+    "24" : "assets/pomodoro_img.png",
+    "32" : "assets/pomodoro_img.png",
+    "64" : "assets/pomodoro_img.png",
+    "128" : "assets/pomodoro_img.png"
+  },
+  "permissions": ["geolocation"]
 }
