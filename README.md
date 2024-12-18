@@ -15,7 +15,13 @@
 openWeather API를 사용하여 날씨에 따라 배경화면, 아이콘이 변경되는 뽀모도로입니다.
 크롬확장 프로그램으로 개발되었습니다. 
 
-## 시작 가이드
+This program is based on the traditional Pomodoro technique, with backgrounds and icons changing according to the weather. It measures time using a 25-minute timer, and for every four Pomodoros completed, one round is added. A total of 12 rounds can be measured.
+
+Experience the fun of changing according to the weather with this extension, and manage your time efficiently!
+
+## 배포 과정
+[2024.12.18] 검토 대기중
+![image](https://github.com/user-attachments/assets/6150220e-6648-40d9-a3a1-f556a971178e)
 
 
 
