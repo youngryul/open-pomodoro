@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Weather Pomodoro",
   "description" : "Pomodoro that changes according to the weather",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "action": {
     "default_popup": "index.html",
     "default_icon": "assets/pomodoro_img.png"
