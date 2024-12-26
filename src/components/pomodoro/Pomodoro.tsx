@@ -11,7 +11,7 @@ function Pomodoro({ weather }: PomodoroProps) {
 
   return (
     <div className={`${bgColor} overflow-hidden`}>
-      <div className="flex flex-col items-center justify-center  w-[480px] h-full mx-auto">
+      <div className="flex flex-col items-center justify-center  w-[480px] h-screen mx-auto">
         <h1 className="text-white text-4xl font-bold">{icon}Pomodoro</h1>
         <Timer />
         <Counter />
