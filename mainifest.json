@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Weather Pomodoro",
-  "description" : "Pomodoro that changes according to the weather",
-  "version": "1.2.0",
+  "description" : "The Pomodoro is a method to enhance work concentration by focusing for a set period of time followed by a short break.",
+  "version": "1.2.1",
   "action": {
     "default_icon": "assets/pomodoro_img.png"
   },
@@ -13,7 +13,7 @@
     "64" : "assets/pomodoro_img.png",
     "128" : "assets/pomodoro_img.png"
   },
-  "permissions": ["geolocation", "tabs"],
+  "permissions": ["geolocation"],
   "background" : {
     "service_worker" : "background.js"
   }
